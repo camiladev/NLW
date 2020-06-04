@@ -1,0 +1,107 @@
+{% extends "layout.html" %}
+
+{% set pageId = "page-search-results" %}
+    
+    {% block title %}
+        <title>Resultado da pesquisa</title>
+    {% endblock title %}
+
+    {% block styles %}
+        <link rel="stylesheet" href="CSS/search-results.css">
+    {% endblock styles %}    
+
+    
+
+    {#id="page-home" #}
+    {% block content %}
+        {% include "partials/page-header.html" %}
+               
+                <main>
+                    <h4>
+                        <strong>2 pontos</strong> encontrados
+                    </h4>
+                    <div class="cards">
+                        <div class="card">
+                            <img src="./img/Papeis-Papelao.jfif" alt="Colectoria">
+                            <h1>Coletoria</h1>
+                            <h3>Residuos Eletronicos, lâmpadas</h3>
+                            <p>Rio do Sul, Santa Catarinha <br/>
+                                Guilherme Gemballa, Jardim América <br/>
+                                nº 260
+                            </p>
+                        </div>
+
+                        <div class="card">
+                            <img src="./img/Recycle.jfif" alt="Papersider">
+                            <h1>Papersider</h1>
+                            <h3>Papeis e papelão</h3>
+                            <p>Rio do Sul, Santa Catarinha <br/>
+                                Guilherme Gemballa, Jardim América <br/>
+                                nº 260
+                            </p>
+                        </div>
+                    </div>
+                </main>
+    {% endblock content %}
+      
+    
+      
+
+
+
+
+
+<!--
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resultado da pesquisa</title>
+
+    <link rel="stylesheet" href="CSS/estilos.css">    
+    <link rel="stylesheet" href="CSS/responsive.css">
+
+    <link rel="stylesheet" href="CSS/search-results.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&family=Ubuntu:wght@400;500;700&display=swap" rel="stylesheet">
+
+</head>
+<body>
+
+    <body>
+        <div id="page-search-results">
+            
+            {% include "partials/page-header.html" %}
+               
+                <main>
+                    <h4>
+                        <strong>2 pontos</strong> encontrados
+                    </h4>
+                    <div class="cards">
+                        <div class="card">
+                            <img src="./img/Papeis-Papelao.jfif" alt="Colectoria">
+                            <h1>Coletoria</h1>
+                            <h3>Residuos Eletronicos, lâmpadas</h3>
+                            <p>Rio do Sul, Santa Catarinha <br/>
+                                Guilherme Gemballa, Jardim América <br/>
+                                nº 260
+                            </p>
+                        </div>
+
+                        <div class="card">
+                            <img src="./img/Recycle.jfif" alt="Papersider">
+                            <h1>Papersider</h1>
+                            <h3>Papeis e papelão</h3>
+                            <p>Rio do Sul, Santa Catarinha <br/>
+                                Guilherme Gemballa, Jardim América <br/>
+                                nº 260
+                            </p>
+                        </div>
+                    </div>
+                </main>
+              
+        </div>
+    
+</body>
+</html>
+-->

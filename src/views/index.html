@@ -1,0 +1,94 @@
+{% extends "layout.html" %}
+
+{% set pageId = "page-home" %}
+    
+     <!--title esta padrão -->
+
+    {% block styles %}
+        <link rel="stylesheet" href="CSS/home.css">
+        <link rel="stylesheet" href="CSS/modal.css">
+
+    {% endblock styles %}    
+
+    
+
+    {#id="page-home" #}
+    {% block content %}
+        <div class="content">
+            <header>
+                <figure>
+                    <img src="icones/logo.svg" alt="Logo Ecoleta">
+                </figure>
+                <a href="/create-point"><span></span>Cadastre um ponto de coleta</a>
+            </header>
+            <main>
+                <h1>Seu marketplace de coleta de resíduos.</h1>
+                <p>Ajudamos pessoas a encontrarem pontos de coleta de forma eficiente.</p>
+                <a href="#"><span></span><strong>Pesquisar pontos de coleta</strong></a>
+            </main>
+        </div>  
+    {% endblock content %}
+      
+    
+      
+
+   <!--modal -->
+   {% block modal %}
+        {% include "partials/modal.html" %}
+   {% endblock modal %}
+    
+    {% block scripts %}
+        <script src="/scripts/index.js"></script>
+    {% endblock scripts %}
+
+    
+
+
+
+
+
+
+
+
+
+<!--
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ecoleta</title>
+
+    <link rel="stylesheet" href="CSS/estilos.css">    
+    <link rel="stylesheet" href="CSS/home.css">
+    <link rel="stylesheet" href="CSS/modal.css">
+
+    <link rel="stylesheet" href="CSS/responsive.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&family=Ubuntu:wght@400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div id="page-home">
+        <div class="content">
+            <header>
+                <figure>
+                    <img src="icones/logo.svg" alt="Logo Ecoleta">
+                </figure>
+                <a href="/create-point"><span></span>Cadastre um ponto de coleta</a>
+            </header>
+            <main>
+                <h1>Seu marketplace de coleta de resíduos.</h1>
+                <p>Ajudamos pessoas a encontrarem pontos de coleta de forma eficiente.</p>
+                <a href="#"><span></span><strong>Pesquisar pontos de coleta</strong></a>
+            </main>
+        </div>  
+    </div>
+      
+
+   --modal --
+    {% include "partials/modal.html" %}
+
+    <script src="./scripts/index.js"></script>
+</body>
+</html>
+
+-->

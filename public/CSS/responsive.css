@@ -1,0 +1,139 @@
+@media (max-width:900px){
+    #page-home{
+        background-position-x: 70vw;
+    }
+
+    #page-home .content{
+        align-items: center;
+        text-align: center;
+    }
+
+    #page-home header a{
+        position: absolute;
+        bottom: 48px;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    #page-home main {
+        align-items: center;
+    }
+
+    #page-search-results .cards{
+        grid-template-columns: 1fr;
+    }
+
+    #page-create-point form fieldset{
+        margin-top: 30px;
+    }
+
+    #page-create-point form {
+        padding: 1em;
+        
+    }
+
+    #page-create-point form h1{
+        font-size: 25px;
+    }
+
+    #page-create-point form legend h2 {
+        font-size: 20px;
+    }
+
+    #page-create-point form legend{
+        align-items: baseline;
+        flex-direction: column;
+    }
+
+    #page-create-point form legend span{
+        font-size: 12px;
+        line-height: 20px;
+    }
+
+    #page-create-point form .field-group {
+        flex-direction: column;
+    }
+
+    #page-create-point form .field-group .field + .field {
+        margin-left: 0;
+    }
+
+    .items-grid {
+        grid-template-columns: 1fr 1fr;
+        gap: 2em;
+
+        text-align: center;
+    }
+
+    #page-search-results .cards{
+        grid-template-columns: 1fr 1fr;
+        gap: 2em;
+    }
+
+    
+}
+
+@media (max-width:400px){
+
+    #page-home main h1{
+        font-size: 35px;
+        line-height: 35px;
+    }
+
+    #page-home main p{
+        font-size: 16px;
+        line-height: 25px;
+    }
+
+
+    #page-home header a{
+        bottom: 20px;
+        left: 48%;
+        width: 250px;
+    }
+
+    #modal .content{
+        width: auto;
+    }
+
+    #page-create-point header a{
+        font-size: 0px;
+    }
+
+    #page-create-point form .field-group {
+        flex-direction: column;
+    }
+
+    #page-create-point form .field-group .field + .field {
+        margin-left: 0;
+    }
+
+    .items-grid {
+        grid-template-columns: 1fr;
+        gap: 2em;
+    }
+
+    #page-search-results{
+        margin-bottom: 40px;
+    }
+
+    #page-search-results header a{
+        font-size: 0px;
+    }
+
+    
+}
+
+
+
+@media (min-width:1700px){
+    #page-home{
+        background-position-x: 40vw;
+    }
+}
+
+@media (max-height:760px){
+    #page-home{
+        background-position-y: 200px;
+    }
+}
