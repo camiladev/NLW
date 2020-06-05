@@ -17,30 +17,31 @@
         {% include "partials/page-header.html" %}
                
                 <main>
-                    <h4>
-                        <strong>2 pontos</strong> encontrados
-                    </h4>
-                    <div class="cards">
-                        <div class="card">
-                            <img src="./img/Papeis-Papelao.jfif" alt="Colectoria">
-                            <h1>Coletoria</h1>
-                            <h3>Residuos Eletronicos, lâmpadas</h3>
-                            <p>Rio do Sul, Santa Catarinha <br/>
-                                Guilherme Gemballa, Jardim América <br/>
-                                nº 260
-                            </p>
-                        </div>
 
-                        <div class="card">
-                            <img src="./img/Recycle.jfif" alt="Papersider">
-                            <h1>Papersider</h1>
-                            <h3>Papeis e papelão</h3>
-                            <p>Rio do Sul, Santa Catarinha <br/>
-                                Guilherme Gemballa, Jardim América <br/>
-                                nº 260
-                            </p>
+                {% if total > 0 %}
+                        <h4>
+                            <strong>{{ total }} pontos</strong> encontrados
+                        </h4>
+                        <div class="cards">
+
+                            {% for place in places %}
+                                <div class="card">
+                                <img src="{{ place.image }}" alt="{{ place.name }}">
+                                <h1>{{ place.name }}</h1>
+                                <h3>{{ place.items }}</h3>
+                                <p>{{ place.city }}, {{ place.state }} <br/>
+                                    {{ place.address }} <br/>
+                                    {{ place.address2 }}
+                                </p>
+                            </div>
+
+                            {% endfor %}
+
                         </div>
-                    </div>
+                {%else%}
+                    <h4><strong>Nenhum</strong> local encontrado!</h4>
+                {% endif %}
+                    
                 </main>
     {% endblock content %}
       
