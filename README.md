@@ -4,13 +4,13 @@
 Durante a semana de 01/06/2020 à 05/06/2020 participei da Next Level Week, um curso relampago oferecido pela Rocketseat, durante a semana desenvolvemos uma aplicação web de cadastro e busca de pontos de coleta de reciclados.
 
 Utilizamos as seguintes linguagens:
-HTML
-CSS
-JavaScript
-Node.js
-React
-SQL
+- HTML
+- CSS
+- JavaScript
+- Node.js
+- React
+- SQL
 
 Framework:
-Express
+- Express
 
